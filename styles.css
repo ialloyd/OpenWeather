@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #833AB4, #C13584, #E1306C, #F77737, #FCAF45, #FFDC80);
+    color: white
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.city-input {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.city-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    outline: none;
+
+}
+
+::placeholder {
+    color: white;
+    font-weight: bold;
+}
+
+.city-input input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.cities {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.city {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+
+}
+
+.city:nth-child(2n) {
+    margin-right: 0;
+}
+
+.city-header {
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.city-header img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px
+}
+
+.city-body {
+    padding: 20px
+}
+.city-body>span>span{
+
+    font-size:13px;
+}
+
+.error {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container>h1 {
+
+    text-align: center;
+}
+
+@media screen and (max-width:601px) {
+
+    .cities {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+    .city {
+
+        width: 100%;
+    }
+
+}
+
+.city-input>span {
+
+    border: 1px solid white;
+    padding: 10px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: none;
+}
+
+#glass {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.427);
+    border: 1px solid rgba(209, 213, 219, 0.5);
+}
+
+.city-body>span{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+::-webkit-scrollbar {
+    display:none;
+
+}
